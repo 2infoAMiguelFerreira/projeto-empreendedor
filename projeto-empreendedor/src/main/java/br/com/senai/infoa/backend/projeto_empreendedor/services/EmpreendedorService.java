@@ -21,4 +21,8 @@ public class EmpreendedorService {
     public List<Empreendedor> listar() {
         return empreendedorRepository.findAll();
     }
+
+    public Empreendedor buscarPorId(Integer id) {
+        return empreendedorRepository.findById(id).get();
+    }
 }

@@ -4,11 +4,14 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.senai.infoa.backend.projeto_empreendedor.models.Empreendedor;
 import br.com.senai.infoa.backend.projeto_empreendedor.services.EmpreendedorService;
+
+
 
 
 
@@ -29,4 +32,8 @@ public class EmpreendedorController {
         return empreendedorService.listar();
     }
     
+    @GetMapping("/buscar/{id}")
+    public Empreendedor buscarPorId(@PathVariable Integer id) {
+        return empreendedorService.buscarPorId(id);
+    }
 }
