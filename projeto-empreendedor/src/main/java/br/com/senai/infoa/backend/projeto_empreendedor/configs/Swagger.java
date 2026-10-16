@@ -8,7 +8,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 @Configuration
 @OpenAPIDefinition(
     info = @Info(
-        title = "Empreende API",
+        title = "API DIVERTIDA 😀😃😄😁😆😅🤣😂🙂🙃🫠😉😊",
         version = "1.0",
         description = "API para o sistema de empreendedorismo de imoveis"
     )
